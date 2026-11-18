@@ -1,0 +1,8 @@
+_nltools_src/
+old/*
+mvta/.ipynb_checkpoints/__pycache__/align-checkpoint.cpython-314.pyc
+*/__pycache__/*
+update_plan.md
+template.py
+*/.ipynb_checkpoints/*
+figures/*

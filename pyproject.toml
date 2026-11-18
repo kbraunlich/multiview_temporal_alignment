@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mvta"
+version = "0.1.0"
+description = "Learn a convolutional kernel that maps simulated MION time series onto BOLD."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Kurt Braunlich" }]
+dependencies = [
+    "numpy>=2",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+    "nilearn>=0.14",
+    "jupyterlab>=4",
+    "ipykernel>=6.29",
+]
+
+[tool.setuptools.packages.find]
+include = ["mvta*"]
