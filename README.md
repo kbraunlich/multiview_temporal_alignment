@@ -79,7 +79,7 @@ kernels = learn_kernels(
 mion_aligned = [apply_kernel(view, kernels[0], run_index) for view in mion_views]
 ```
 
-**3. Perform hyperalignment.** After the MION series have been temporally transformed, project the two groups into a shared space with a spatial hyperalignment method of your choice. Fit that model on training runs and apply it to held-out runs, using the same outer run split as the kernel. Use nltools, BrainIAK, or mvlearn to fit SRM, GCCA, MCCA, or generalized Procrustes-based hyperalignment.
+**3. Perform hyperalignment.** After the MION series have been temporally transformed, project the two groups into a shared space with a spatial hyperalignment method of your choice. Fit that model on training runs and apply it to held-out runs, using the same outer run split as the kernel. 
 
 The package includes `decode_methods` for cross-species stimulus epoch decoding, which is how the notebooks evaluate temporal alignment after hyperalignment. That evaluation uses SRM plus the same correlation rotation, with a time-shift null to drop directions that are not shared above chance.
 
